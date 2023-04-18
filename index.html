@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Delicious Handrawn', cursive;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('img1/gym2.jpg');
+            width: 1920;
+            height: 1275;
+            
+            color: white;
+
+        }
+
+        .left {
+            position: absolute;
+            left: 2%;
+
+            display: inline-block;
+
+            /* border: 2px solid red; */
+            top: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .mid {
+            /* chz ko center me lane k lye 3 chzn krte hn display,width,margin */
+            display: block;
+            width: 37%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+            top: 20px;
+
+
+        }
+
+        .right {
+            position: absolute;
+            right: 2%;
+
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            top: 20px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            /* take home wgera ak hi line me ajaen */
+            display: inline-block;
+            font-size: 17px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 23px 12px;
+        }
+
+        /* mtlb jb home wgera pr cursor rkhn toh underine hojae ya click kren toh toh wo underline rhjae */
+        .navbar li a:hover {
+            /* .navbar li a.active   is not working mine*/
+            text-decoration: underline;
+            color: grey;
+
+        }
+
+        .left img {
+            width: 90px;
+            /* filter se kala safesd or safed kala hojaat */
+            filter: invert(100%);
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: 17px;
+            cursor: pointer;
+            font-family: 'Delicious Handrawn', cursive;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: rgb(143, 125, 125);
+        }
+
+        .container {
+            border: 2px solid white;
+            /* top left */
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+
+
+
+
+
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 495px;
+            padding: 1px;
+            padding-bottom: 5px;
+            border: 2px solid black;
+            margin: 7px auto;
+            font-size:12px ;
+            
+            border-radius: 28px;
+            font-family: 'Delicious Handrawn', cursive;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            
+
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            width: 475px;
+            text-align: center;
+            
+            margin: 20px auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- for logo -->
+        <div class="left">
+            <img src="img1/klogo.jpg" alt="">
+            <div>Umme's Fitness</div>
+
+
+        </div>
+        <!-- for navbar -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+
+        </div>
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button><button class="btn">Email us</button>
+
+        </div>
+        <br><br>
+        <div class="container">
+            <h1>MEET THE NEW YOU</h1>
+            <!-- kynke backend pe km nh krre islye random likhydya php ka name -->
+            <form action="nonaction.php"></form>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button> 
+
+
+        </div>
+    </header>
+
+</body>
+
+</html>
